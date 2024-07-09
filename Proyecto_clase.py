@@ -2,7 +2,7 @@ import streamlit as st
 import streamlit.components.v1 as components
 
 st.title('Manufacturer Analysis in PowerBI')
-power_bi_url = "<iframe title="Power BI Sample" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiNWE3ZjA4YTctMDZmMy00ZjhlLTg0NWItYjU3YjQxYjNlNGFhIiwidCI6IjhhZWJkZGI2LTM0MTgtNDNhMS1hMjU1LWI5NjQxODZlY2M2NCIsImMiOjl9" frameborder="0" allowFullScreen="true"></iframe>"
+power_bi_url = "https://app.powerbi.com/links/yRJxfEl0_C?ctid=8aebddb6-3418-43a1-a255-b964186ecc64&pbi_source=linkShare&bookmarkGuid=f95c1a87-699e-448a-a04f-58b742209543"
 st.markdown(
        f"""
        <div style="display: flex; justify-content: center;">

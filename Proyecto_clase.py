@@ -1,13 +1,21 @@
 import streamlit as st
 import streamlit.components.v1 as components
 
-st.title('Manufacturer Analysis in PowerBI')
-power_bi_url = "https://app.powerbi.com/links/yRJxfEl0_C?ctid=8aebddb6-3418-43a1-a255-b964186ecc64&pbi_source=linkShare&bookmarkGuid=f95c1a87-699e-448a-a04f-58b742209543"
-st.markdown(
-       f"""
-       <div style="display: flex; justify-content: center;">
-           <iframe title="Informe de Power BI" width="1100" height="800" src="{power_bi_url}" frameborder="0" allowFullScreen="true"></iframe>
-       </div>
-       """,
-       unsafe_allow_html=True
-   )
+st.markdown("""
+    <style>
+    .report-container {
+        width: 100vw; /* Ensure full width */
+        height: 100vh; /* Full viewport height */
+        border: none; /* Optional: Removes the border */
+        overflow: hidden; /* Optional: Removes scrollbars */
+    }
+    iframe {
+        width: 100%;
+        height: 100%;
+    }
+    </style>
+""", unsafe_allow_html=True)
+
+st.title("Manufacturer Analysis in PowerBI")
+powerbi_url = "https://app.powerbi.com/view?r=eyJrIjoiNWE3ZjA4YTctMDZmMy00ZjhlLTg0NWItYjU3YjQxYjNlNGFhIiwidCI6IjhhZWJkZGI2LTM0MTgtNDNhMS1hMjU1LWI5NjQxODZlY2M2NCIsImMiOjl9"
+components.html(f'<iframe class="report-container" src="{powerbi_url}" frameborder="0" allowFullScreen="true"></iframe>')

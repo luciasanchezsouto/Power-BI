@@ -1,1 +1,1 @@
-https://power-bi-schz.streamlit.app/
+https://power-bi-manufacturer-analysis.streamlit.app/
